@@ -1,9 +1,64 @@
+@import '~antd/dist/antd.css';
+
+html, body, #root, .App {
+  height: 100%;
+}
+
 .App {
+  position: relative;
   text-align: center;
+  overflow: hidden;
+  color: #fff;
+
+  --page-padding: 20px;
+}
+
+.logo {
+  position: absolute;
+  top: var(--page-padding);
+  left: var(--page-padding);
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #282c34;
+}
+
+.video {
+  width: 100%;
+}
+
+.slider {
+  position: absolute;
+  bottom: var(--page-padding);
+  left: 50%;
+  width: 600px;
+  height: 50px;
+  margin-left: -300px;
+  /* background: #61dafb; */
+}
+
+.github {
+  position: absolute;
+  top: 0;
+  right: -75px;
+  width: 150px;
+  height: 50px;
+  background: #61dafb;
+  transform-origin: 50% 0;
+  transform: rotate(45deg);
+}
+
+.github-icon {
+  margin-top: 18px;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
