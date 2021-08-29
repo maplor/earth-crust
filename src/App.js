@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <div className="bg">
-        <VideoPlayer url="/test.mp4" />
+        <VideoPlayer url="/test.mp4" duration={4.876191} progress={progress} />
       </div>
       <div className="slider">
         <Slider
